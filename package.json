@@ -1,13 +1,15 @@
 {
+  "homepage": "https://Abhisheksathala.github.io/ui-ux-F",
   "name": "job-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^11.13.5",
